@@ -188,12 +188,12 @@ interface = wlp2s0
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
-format-connected-underline = #1db954
+;format-connected-underline = #1db954
 label-connected = %essid%
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>
-format-disconnected-underline = #ff0000
+;format-disconnected-underline = #ff0000
 label-disconnected = %ifname% disconnected
 ;label-disconnected-foreground = ${colors.foreground-alt}
 
@@ -209,14 +209,14 @@ type = internal/network
 interface = enp1s0
 interval = 3.0
 
-format-connected-underline = #1db954
+;format-connected-underline = #1db954
 format-connected-prefix = " "
 format-connected-prefix-foreground = #000000
 label-connected = %local_ip%
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>
-format-disconnected-underline = #ff0000
+;format-disconnected-underline = #ff0000
 label-disconnected = %ifname% disconnected
 ;label-disconnected-foreground = ${colors.foreground-alt}
 
