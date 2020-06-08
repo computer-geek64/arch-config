@@ -2,6 +2,7 @@ export PATH="$PATH:/opt/bin"
 export EDITOR="/usr/bin/vim"
 
 alias ls='colorls'
+alias cat='lolcat'
 
 source ~/.enhancd/init.sh
 
