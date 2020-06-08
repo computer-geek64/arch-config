@@ -58,7 +58,7 @@ font-2 = siji:pixelsize=10;1
 
 modules-left = i3
 modules-center = xwindow
-modules-right = check-openvpn filesystem xbacklight pulseaudio memory cpu temperature wlan eth battery date powermenu
+modules-right = check-openvpn pacman-updates xbacklight pulseaudio filesystem memory cpu temperature wlan eth battery date powermenu
 
 tray-position = right
 tray-padding = 2
@@ -354,12 +354,21 @@ menu-2-1-exec = menu-open-0
 type = custom/script
 
 exec = pgrep openvpn
-
 interval = 5
 
 format = <label>
 format-foreground = ${colors.foreground}
 label = VPN
+
+[module/pacman-updates]
+type = custom/script
+
+exec = pacman -Qu | wc -l
+interval = 1000
+
+format = <label>
+format-foreground = ${colors.foreground}
+label = %{F#000000}⟳%{F-} %output%
 
 [settings]
 screenchange-reload = true
