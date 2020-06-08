@@ -58,7 +58,7 @@ font-2 = siji:pixelsize=10;1
 
 modules-left = i3
 modules-center = xwindow
-modules-right = check-openvpn pacman-updates xbacklight pulseaudio filesystem memory cpu temperature wlan eth battery date powermenu
+modules-right = check-openvpn pacman-updates xbacklight pulseaudio filesystem memory cpu temperature wlan eth battery date
 
 tray-position = right
 tray-padding = 2
@@ -317,38 +317,38 @@ ramp-2 = 
 ;ramp-foreground = ${colors.foreground-alt}
 ramp-foreground = #000000
 
-[module/powermenu]
-type = custom/menu
+;[module/powermenu]
+;type = custom/menu
 
-expand-right = true
+;expand-right = true
 
-format-spacing = 1
+;format-spacing = 1
 
-label-open = 
-label-open-foreground = ${colors.danger}
-label-close =  cancel
-label-close-foreground = ${colors.foreground}
-label-separator = |
-label-separator-foreground = ${colors.foreground}
+;label-open = 
+;label-open-foreground = ${colors.danger}
+;label-close =  cancel
+;label-close-foreground = ${colors.foreground}
+;label-separator = |
+;label-separator-foreground = ${colors.foreground}
 
-menu-0-0 = restart
-menu-0-0-foreground = ${colors.danger}
-menu-0-0-exec = menu-open-1
-menu-0-1 = shutdown
-menu-0-1-foreground = ${colors.danger}
-menu-0-1-exec = menu-open-2
+;menu-0-0 = restart
+;menu-0-0-foreground = ${colors.danger}
+;menu-0-0-exec = menu-open-1
+;menu-0-1 = shutdown
+;menu-0-1-foreground = ${colors.danger}
+;menu-0-1-exec = menu-open-2
 
-menu-1-0 = cancel
-menu-1-0-exec = menu-open-0
-menu-1-1 = restart
-menu-1-1-foreground = ${colors.danger}
-menu-1-1-exec = sudo reboot
+;menu-1-0 = cancel
+;menu-1-0-exec = menu-open-0
+;menu-1-1 = restart
+;menu-1-1-foreground = ${colors.danger}
+;menu-1-1-exec = sudo reboot
 
-menu-2-0 = shutdown
-menu-2-0-foreground = ${colors.danger}
-menu-2-0-exec = sudo poweroff
-menu-2-1 = cancel
-menu-2-1-exec = menu-open-0
+;menu-2-0 = shutdown
+;menu-2-0-foreground = ${colors.danger}
+;menu-2-0-exec = sudo poweroff
+;menu-2-1 = cancel
+;menu-2-1-exec = menu-open-0
 
 [module/check-openvpn]
 type = custom/script
