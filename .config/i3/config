@@ -190,6 +190,7 @@ exec_always --no-startup-id /usr/bin/redshift
 bindsym $mod+l exec --no-startup-id "/opt/bin/i3lock-fancy.sh"
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
+bindsym Print exec "scrot ~/Pictures/'%Y-%m-%d-%H%M%S_$wx$h_scrot.png'"
 
 gaps inner 20
 for_window [class=".*"] border pixel 0
