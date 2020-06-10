@@ -7,9 +7,9 @@ from datetime import datetime, timedelta
 
 
 firewatch_path = '/home/ashish/.firewatch'
-firewatch = 'cliff'
-lat = ''
-lon = ''
+firewatch = ''  # 'cliff' or 'forest'
+lat = ''  # Latitude coordinate followed by 'N'
+lon = ''  # Longitude coordinate followed by 'E'
 
 sunrise, sunset = Popen(['/usr/bin/sunwait', 'list', lat, lon], stdout=PIPE, stderr=PIPE).communicate()[0].decode().strip().split(', ')
 time = datetime.now()
