@@ -182,7 +182,7 @@ bindsym $mod+r mode "resize"
 
 # Modified
 exec --no-startup-id /usr/bin/polybar statusbar
-exec --no-startup-id /usr/bin/nitrogen --restore
+exec --no-startup-id /opt/bin/firewatch_wallpaper.py
 exec --no-startup-id xautolock -time 3 -corners 000- -locker "/opt/bin/i3lock-fancy.sh"
 exec_always --no-startup-id "/usr/bin/compton --config ~/.config/compton/compton.conf"
 exec_always --no-startup-id /usr/bin/redshift

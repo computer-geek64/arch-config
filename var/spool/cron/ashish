@@ -1,0 +1,6 @@
+SHELL=/bin/bash
+PATH="$PATH:/opt/bin"
+DISPLAY=:0
+
+@reboot /opt/bin/firewatch_wallpaper.py
+0,15,30,45 5-8,18-22 * * * /usr/bin/python3 /opt/bin/firewatch_wallpaper.py
