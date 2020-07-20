@@ -1,13 +1,11 @@
 export PATH="$PATH:/opt/bin"
 export EDITOR="/usr/bin/vim"
-export BARVA_SOURCE=$(/usr/share/barva/pa-get-default-monitor.sh)
-#export BARVA_TARGET='#00FF00' # Green
-#export BARVA_TARGET='#00FFFF' # Aqua
-#export BARVA_TARGET='#FF8000' # Orange
-export BARVA_TARGET='#FF0000' # Red
 
 alias ls='colorls'
 alias cat='lolcat'
+alias grep='grep --color=auto'
+alias python3='python3 -B'
+alias cnn='youtube-dl $(youtube-dl -g https://www.livenewsnow.com/american/cnn-news-usa.html --add-header "Referer: https://www.livenewsnow.com/" --no-warnings) --add-header "Referer: https://www.livenewsnow.com/" -o - | mpv -'
 
 source ~/.enhancd/init.sh
 
@@ -19,8 +17,6 @@ echo -e '\e[H\e[2J           \e[1;36m.
       \e[1;36m/##(   )##\   \e[1;37m%OoO# #   %#e" #  #  \e[1;36m| | |   | ^._.| / \ \e[0;37m
      \e[1;36m/###P   q#,^\
     \e[1;36m/P^         ^q\ \e[0;37m'
-
-/usr/bin/barva &
 
 powerline-daemon -q
 POWERLINE_BASH_CONTINUATION=1
